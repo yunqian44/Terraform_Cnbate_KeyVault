@@ -30,7 +30,7 @@ data "azurerm_resource_group" "cnbate_resource_group" {
 
 module "cnbate_Web_app" {
   source                = "../module/web_app"
-  app_service_locations = [local.location_eastAsia, local.location_southeastAsia]
+  app_service_locations = [local.location_eastAsia]
   resource_group_name   = data.azurerm_resource_group.cnbate_resource_group.name
 
   enable                  = var.enable
