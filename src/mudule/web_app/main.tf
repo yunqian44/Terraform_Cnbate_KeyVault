@@ -9,9 +9,6 @@ resource "azurerm_app_service_plan" "app_service_plan" {
     size = lookup(element(var.app_service_plans, count.index), "size")
   }
 
-  # os_type  = element(var.os_types, count.index)
-  # sku_name = element(var.sku_names, count.index)
-
 }
 
 resource "azurerm_app_service" "app_service" {
