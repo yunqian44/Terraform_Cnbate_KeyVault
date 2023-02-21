@@ -60,7 +60,7 @@ variable "app_service_plans" {
     {
       tier = "Standard",
       size = "S1"
-    }]
+  }]
   description = "(required) sku of create a web app plan (map list)"
 }
 
@@ -91,7 +91,7 @@ variable "app_settings" {
     {
       "ASPNETCORE_ENVIRONMENT" = "Production"
       "Location"               = "East Asia"
-    }ssss
+    }
   ]
   description = "(Optional) A key-value pair of app settings."
 }
